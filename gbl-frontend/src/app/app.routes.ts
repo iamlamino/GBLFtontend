@@ -18,21 +18,21 @@ export const routes: Routes = [
     children: [
       { path: '', component: DashboardHomeComponent }, // page des cartes
 
-      //  LIVRES
+      // LIVRES
       { path: 'books', component: BookList },
       { path: 'books/new', component: BookForm },
-      { path: 'books/:id', component: BookDetail },
-      { path: 'books/edit/:id', component: BookForm },
+      { path: 'books/:id', component: BookDetail, data: { renderMode: 'client' } },
+      { path: 'books/edit/:id', component: BookForm, data: { renderMode: 'client' } },
 
-      //  CATÉGORIES
+      // CATÉGORIES
       { path: 'categorie', component: CategorieList },
       { path: 'categorie/new', component: CategorieForm },
-      { path: 'categorie/edit/:id', component: CategorieForm },
+      { path: 'categorie/edit/:id', component: CategorieForm, data: { renderMode: 'client' } },
 
-      //  UTILISATEURS
+      // UTILISATEURS
       { path: 'users', component: UserList },
       { path: 'users/new', component: UserForm },
-      { path: 'users/edit/:id', component: UserForm },
+      { path: 'users/edit/:id', component: UserForm, data: { renderMode: 'client' } },
     ],
   },
 
