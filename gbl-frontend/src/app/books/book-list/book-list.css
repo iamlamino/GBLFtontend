@@ -1,0 +1,28 @@
+.book-detail:hover {
+  background-color: #383131;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.clickable:hover {
+  color: #0056b3;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.success {
+  color: green;
+  text-align: center;
+}
+
+.footer-nav {
+  text-align: center;
+  margin-top: 15px;
+}
